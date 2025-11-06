@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="Untitled-2.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoDrone: Flight for the Forest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>EcoDrone</h1>
+    <nav>
+      <ul>
+        <li><a href="#about" tabindex="1">About</a></li>
+        <li><a href="#features" tabindex="2">Features</a></li>
+        <li><a href="#join" tabindex="3">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about">
+      <h2>About EcoDrone</h2>
+      <article>
+        <p>EcoDrone is a revolutionary eco-friendly drone service for environmental monitoring and sustainable farming support.</p>
+        <figure>
+          <img src="assets/ecodrone.svg" alt="EcoDrone Logo" />
+        </figure>
+      </article>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <div class="tabs">
+        <input type="radio" id="tab1" name="tab-control" checked />
+        <label for="tab1" tabindex="4">Sustainability</label>
+
+        <input type="radio" id="tab2" name="tab-control" />
+        <label for="tab2" tabindex="5">Technology</label>
+
+        <input type="radio" id="tab3" name="tab-control" />
+        <label for="tab3" tabindex="6">Community</label>
+
+        <div class="tab-content">
+          <section>
+            <h3>Sustainability</h3>
+            <p>Eco-friendly materials and battery systems reduce environmental footprint.</p>
+          </section>
+          <section>
+            <h3>Technology</h3>
+            <p>Advanced sensors and AI-powered flight controls for precision monitoring.</p>
+          </section>
+          <section>
+            <h3>Community</h3>
+            <p>Partnering with local farmers and environmental groups globally.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="form-section">
+      <h2>Join Us</h2>
+      <form aria-label="Join EcoDrone form" novalidate>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <label class="custom-checkbox">Eco Farming
+            <input type="checkbox" name="interests" value="eco_farming" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="custom-checkbox">Environmental Research
+            <input type="checkbox" name="interests" value="research" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="custom-checkbox">Tech Innovations
+            <input type="checkbox" name="interests" value="tech" />
+            <span class="checkmark"></span>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Plan Type</legend>
+          <label class="custom-radio">Basic
+            <input type="radio" name="plan" value="basic" checked />
+            <span class="radiomark"></span>
+          </label>
+
+          <label class="custom-radio">Premium
+            <input type="radio" name="plan" value="premium" />
+            <span class="radiomark"></span>
+          </label>
+        </fieldset>
+
+        <label for="region">Region:</label>
+        <select id="region" name="region" required>
+          <option value="">Select your region</option>
+          <option value="north_america">North America</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="south_america">South America</option>
+          <option value="africa">Africa</option>
+        </select>
+
+        <label for="message">Message or Questions:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 EcoDrone Initiative</p>
+  </footer>
+</body>
+</html>
